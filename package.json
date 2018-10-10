@@ -1,0 +1,23 @@
+{
+  "name": "exercise_for_lab_08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnificent-seven/ExerciseForLab08.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magnificent-seven/ExerciseForLab08/issues"
+  },
+  "homepage": "https://github.com/magnificent-seven/ExerciseForLab08#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {}
+}
