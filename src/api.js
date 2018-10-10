@@ -11,7 +11,7 @@ app.get("/greeting/:name", (req, res) => {
   
   // hint 'req.params.name'
   // console.log(req);
-  res.status = 201;
+  res.status = 200;
   if(req.params.name === "_") {
 	res.sendStatus(res.status);
   } else {
