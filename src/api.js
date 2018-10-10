@@ -8,12 +8,16 @@ app.get("/greeting/:name", (req, res) => {
   // Fill in your code that:
   // 1. set's the status to 200
   // 2. and returns an object with the greeting
-
-  //hint 'req.params.name'
-  var result = greeting(req.params.name); 
-  res.send({ greeting: result });
-  //req.params.status = 200;
-  //req.params.body.greeting = "Hello, Diana!";
+  
+  // hint 'req.params.name'
+  // console.log(req);
+  res.status = 200;
+  if(req.params.name === "_") {
+	res.sendStatus(res.status);
+  } else {
+	var result = greeting(req.params.name);
+	res.send({ greeting: result });
+  }
 });
 
 module.exports = app;

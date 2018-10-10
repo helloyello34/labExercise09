@@ -6,7 +6,7 @@ describe("GET /greeting/:name endpoint", () => {
     const res = await request(api).get("/greeting/_");
     expect(res.status).toBe(200);
   });
-  if("should return the greeting in a object", async() => {
+  it("should return the greeting in a object", async() => {
     const res = await request(api).get("/greeting/Diana");
     expect(res.body.greeting).toBe("Hello, Diana!");
   });
